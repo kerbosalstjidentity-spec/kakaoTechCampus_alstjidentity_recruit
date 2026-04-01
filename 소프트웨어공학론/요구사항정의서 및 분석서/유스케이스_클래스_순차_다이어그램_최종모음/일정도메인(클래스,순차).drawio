@@ -1,0 +1,419 @@
+<mxfile host="Electron" modified="2024-05-11T13:19:07.758Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="lUkqGZjSsrzAHYm755JK" version="21.6.1" type="device">
+  <diagram name="페이지-1" id="H7E6z0at0WvNIE7GGhYj">
+    <mxGraphModel dx="1613" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-1" value="ScheduleController&amp;nbsp;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="90" width="280" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-2" value="-&amp;nbsp; scheduleService : ScheduleService&lt;br&gt;-&amp;nbsp; scheduleTimeDTO : TimeDTO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-1" vertex="1">
+          <mxGeometry y="26" width="280" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="EPtcZUJhTNnM9XVzbQLt-1" vertex="1">
+          <mxGeometry y="60" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-4" value="+ ScheduleController()&lt;br&gt;+ execute() :String&lt;br&gt;+ registerSchedule(Date, String) :bool&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ sendDownSchedule(Date): bool&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ modifySchedule(Date,String): bool&amp;nbsp;&lt;br&gt;+ lookSchedule(Date):List&amp;lt;TimeDTO&amp;gt;&lt;br&gt;+ setScheduleService(ScheduleService): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-1" vertex="1">
+          <mxGeometry y="80" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-5" value="DailyScheduleService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="374" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-6" value="- scheduleDTO :TimeDTO&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;- dailyScheduleRepo :ScheduleRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-5" vertex="1">
+          <mxGeometry y="26" width="280" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="EPtcZUJhTNnM9XVzbQLt-5" vertex="1">
+          <mxGeometry y="70" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-8" value="+ DailyScheduleService():&amp;nbsp;&lt;br&gt;+updateDayPlan(TimeDTO) : bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+addDayPlan(TimeDTO) : bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+deleteDayPlan(Date date) : bool&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+SearchDayPlan(Date date) : List&amp;lt;TimeDTO&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-5" vertex="1">
+          <mxGeometry y="78" width="280" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-9" value="MonthlyScheduleService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1150" y="374" width="290" height="170" as="geometry">
+            <mxRectangle x="-770" y="-840" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-10" value="- scheduleDTO :TimeDTO&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;- monthlyScheduleRepo :ScheduleRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-9" vertex="1">
+          <mxGeometry y="26" width="290" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="EPtcZUJhTNnM9XVzbQLt-9" vertex="1">
+          <mxGeometry y="60" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-12" value="+MonthlyScheduleService():&lt;br&gt;+updateDayPlan(TimeDTO) : bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+addDayPlan(TimeDTO) : bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+deleteDayPlan(Integer Month) : bool&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+SearchDayPlan(Integer Month) : TimeDTO&lt;br&gt;-convertIntegerToDate (Integer Month):Date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-9" vertex="1">
+          <mxGeometry y="68" width="290" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-13" value="&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;br&gt;ScheduleService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="930" y="90" width="310" height="100" as="geometry">
+            <mxRectangle x="-3050" y="-2180" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="EPtcZUJhTNnM9XVzbQLt-13" vertex="1">
+          <mxGeometry y="40" width="310" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-15" value="+updateDayPlan(TimeDTO) : bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+addDayPlan(TimeDTO) : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-13" vertex="1">
+          <mxGeometry y="48" width="310" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-16" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.477;entryY=1.109;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-5" target="EPtcZUJhTNnM9XVzbQLt-15" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="920" y="309" as="sourcePoint" />
+            <mxPoint x="591" y="81" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-17" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.585;entryY=1.212;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-9" target="EPtcZUJhTNnM9XVzbQLt-15" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1300" y="199" as="sourcePoint" />
+            <mxPoint x="1428" y="21" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-18" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=0;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;entryX=0.022;entryY=-0.045;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-2" target="EPtcZUJhTNnM9XVzbQLt-15" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="610" y="149" as="sourcePoint" />
+            <mxPoint x="863.2299999999996" y="142.66000000000008" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-19" value="TimeDTO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="489" width="280" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-20" value="- calenderTime: Date&lt;br&gt;- timeSchedule : Map&amp;lt;Date, List&amp;lt;String&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-19" vertex="1">
+          <mxGeometry y="26" width="280" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="EPtcZUJhTNnM9XVzbQLt-19" vertex="1">
+          <mxGeometry y="70" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-22" value="+ TimeDTO(Date):&amp;nbsp;&lt;br&gt;+ getCalenderDate(): Date&lt;br&gt;+ getCalenderMonth() :Date&lt;br&gt;+ getSchedule(Date time): List&amp;lt;String&amp;gt;&lt;br&gt;+ insertSchedule(Date, List&amp;lt;String&amp;gt;): bool&lt;br&gt;+ deleteSchedule(Date) : bool&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-19" vertex="1">
+          <mxGeometry y="78" width="280" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="EPtcZUJhTNnM9XVzbQLt-19" source="EPtcZUJhTNnM9XVzbQLt-22" target="EPtcZUJhTNnM9XVzbQLt-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-24" value="ScheduleRepository" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="895" y="619" width="350" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-25" value="-&amp;nbsp; plan : Map&amp;lt;Date,String&amp;gt;&lt;br&gt;-&amp;nbsp; observers : List&amp;lt;observers&amp;gt;&lt;br&gt;-&amp;nbsp; scheduleDTO :TimeDTO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-24" vertex="1">
+          <mxGeometry y="26" width="350" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="EPtcZUJhTNnM9XVzbQLt-24" vertex="1">
+          <mxGeometry y="80" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-27" value="+ ScheduleRepository():&lt;br&gt;+notifyobserver() :void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+removeobserver(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+registerobserver(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+getPlan(Date) : TimeDTO&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;- setPlan(TimeDTO) :bool&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+deletePlan(List&amp;lt;Date&amp;gt; period) : bool&lt;br&gt;+changePlan(List&amp;lt;TimeDTO&amp;gt;)&amp;nbsp; : bool&lt;br&gt;- sendTodayScheduleAlarm(String msg, String type):void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-24" vertex="1">
+          <mxGeometry y="88" width="350" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-28" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=0;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;exitX=0.511;exitY=1.14;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-8" target="EPtcZUJhTNnM9XVzbQLt-24" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="900" y="589" as="sourcePoint" />
+            <mxPoint x="1070" y="609" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-29" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=0;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;exitX=0.552;exitY=1.128;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.58;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-12" target="EPtcZUJhTNnM9XVzbQLt-24" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1190" y="559" as="sourcePoint" />
+            <mxPoint x="1394.869999999999" y="559.7380000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-30" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.596;entryY=1.073;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.714;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-19" target="EPtcZUJhTNnM9XVzbQLt-4" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="470" y="479" as="sourcePoint" />
+            <mxPoint x="400" y="429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-31" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=-0.021;entryY=0.81;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.042;exitY=0.431;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-22" target="EPtcZUJhTNnM9XVzbQLt-25" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="690" y="799" as="sourcePoint" />
+            <mxPoint x="780" y="567" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-32" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=-0.03;entryY=0.817;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.019;exitY=0.264;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-20" target="EPtcZUJhTNnM9XVzbQLt-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="540" y="570" as="sourcePoint" />
+            <mxPoint x="630" y="338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-33" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.085;entryY=1.07;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.019;exitY=0.21;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-22" target="EPtcZUJhTNnM9XVzbQLt-12" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1480" y="809" as="sourcePoint" />
+            <mxPoint x="1570" y="577" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-34" value="ScheduleController" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1850" y="50" width="100" height="890" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-35" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="EPtcZUJhTNnM9XVzbQLt-34" vertex="1">
+          <mxGeometry x="45" y="110" width="10" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-36" value="ScheduleRepository" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="2243" y="50" width="145" height="890" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-37" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="EPtcZUJhTNnM9XVzbQLt-36" vertex="1">
+          <mxGeometry x="65" y="150" width="10" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-38" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="EPtcZUJhTNnM9XVzbQLt-36" vertex="1">
+          <mxGeometry x="75" y="230" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-39" value="changePlan(TimeDTO)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="EPtcZUJhTNnM9XVzbQLt-36" target="EPtcZUJhTNnM9XVzbQLt-38" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="210" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="110" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="EPtcZUJhTNnM9XVzbQLt-36" vertex="1">
+          <mxGeometry x="-156" y="390" width="10" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-41" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="EPtcZUJhTNnM9XVzbQLt-36" vertex="1">
+          <mxGeometry x="70" y="410" width="10" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-42" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="EPtcZUJhTNnM9XVzbQLt-36" vertex="1">
+          <mxGeometry x="-149" y="535" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-43" value="searchDayPlan(Date)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="EPtcZUJhTNnM9XVzbQLt-36" target="EPtcZUJhTNnM9XVzbQLt-36" edge="1">
+          <mxGeometry x="0.0005" width="80" relative="1" as="geometry">
+            <mxPoint x="-139.5" y="465.9200000000001" as="sourcePoint" />
+            <mxPoint x="39.5" y="465.65217391304395" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-44" value="Month" style="rounded=0;whiteSpace=wrap;html=1;" parent="EPtcZUJhTNnM9XVzbQLt-36" vertex="1">
+          <mxGeometry x="-143" y="477" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-45" value="searchDayPlan(Integer)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="EPtcZUJhTNnM9XVzbQLt-36" edge="1">
+          <mxGeometry x="0.0005" width="80" relative="1" as="geometry">
+            <mxPoint x="-143" y="574.27" as="sourcePoint" />
+            <mxPoint x="72" y="574.5555555555557" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-46" value="convertIntegerToDate()" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="EPtcZUJhTNnM9XVzbQLt-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-145" y="524" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="-115" y="554" />
+            </Array>
+            <mxPoint x="-140" y="554" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-47" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="EPtcZUJhTNnM9XVzbQLt-36" vertex="1">
+          <mxGeometry x="75" y="600" width="10" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-48" value="getPlan(Date)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="EPtcZUJhTNnM9XVzbQLt-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="576" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="110" y="606" />
+            </Array>
+            <mxPoint x="85" y="606" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-49" value="ScheduleService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=40;" parent="1" vertex="1">
+          <mxGeometry x="2030" y="50" width="120" height="890" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-50" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="EPtcZUJhTNnM9XVzbQLt-49" vertex="1">
+          <mxGeometry x="55" y="130" width="10" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-51" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" parent="1" target="EPtcZUJhTNnM9XVzbQLt-34" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1740" y="160" as="sourcePoint" />
+            <mxPoint x="1850" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-52" value="1: new" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="EPtcZUJhTNnM9XVzbQLt-51" vertex="1" connectable="0">
+          <mxGeometry x="0.0961" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-54" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1730" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-54" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="1660" y="40" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-55" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" parent="1" target="EPtcZUJhTNnM9XVzbQLt-50" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1905" y="180" as="sourcePoint" />
+            <mxPoint x="2075" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-56" value="2: new" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="EPtcZUJhTNnM9XVzbQLt-55" vertex="1" connectable="0">
+          <mxGeometry x="0.0961" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-57" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" parent="1" target="EPtcZUJhTNnM9XVzbQLt-36" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2100" y="200" as="sourcePoint" />
+            <mxPoint x="2240" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-58" value="3: new" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="EPtcZUJhTNnM9XVzbQLt-57" vertex="1" connectable="0">
+          <mxGeometry x="0.0961" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-59" value="일정을 등록한다" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" target="EPtcZUJhTNnM9XVzbQLt-35" edge="1">
+          <mxGeometry x="0.0005" width="80" relative="1" as="geometry">
+            <mxPoint x="1740" y="210" as="sourcePoint" />
+            <mxPoint x="1880" y="210" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-60" value="addPlan(TimeDTO)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-49" edge="1">
+          <mxGeometry x="0.0009" width="80" relative="1" as="geometry">
+            <mxPoint x="2112" y="244.5" as="sourcePoint" />
+            <mxPoint x="2310" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2042" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-61" value="return:&amp;nbsp; success{bool}}" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2087" y="334.5" as="sourcePoint" />
+            <mxPoint x="1899.5" y="334.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-62" value="return success {bool}" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2315" y="327" as="sourcePoint" />
+            <mxPoint x="2100" y="327" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-63" value="return: success{bool}l" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1900" y="350" as="sourcePoint" />
+            <mxPoint x="1740" y="350" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-64" value="registerSchedule(Date,String)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="0.0005" width="80" relative="1" as="geometry">
+            <mxPoint x="1908" y="230.1800000000003" as="sourcePoint" />
+            <mxPoint x="2087.5" y="230.24242424242402" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-65" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-67" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1730" y="480" as="sourcePoint" />
+            <mxPoint x="1730" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-66" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" target="EPtcZUJhTNnM9XVzbQLt-67" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1730" y="940" as="sourcePoint" />
+            <mxPoint x="1730" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-67" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1725" y="150" width="10" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-68" value="일정을 조회한다," style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="0.0005" width="80" relative="1" as="geometry">
+            <mxPoint x="1735" y="454.22" as="sourcePoint" />
+            <mxPoint x="1890" y="454.22" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-69" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1895" y="430" width="10" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-70" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1720" y="420" width="10" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-71" value="return : TimeDTO" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2085" y="762" as="sourcePoint" />
+            <mxPoint x="1905" y="762" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-72" value="return :TimeDTO" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1899.5" y="783" as="sourcePoint" />
+            <mxPoint x="1730" y="783" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-73" value="일정 수정/삭제의 과정도 위와 유사한&amp;nbsp; 과정으로 일어남." style="html=1;align=center;verticalAlign=middle;dashed=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1718" y="842" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-74" value="lookSchedule(Date)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="0.0005" width="80" relative="1" as="geometry">
+            <mxPoint x="1907" y="469.25" as="sourcePoint" />
+            <mxPoint x="2092" y="468.75" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-75" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="2080" y="417.5" width="220" height="295" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-76" value="Day" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2100" y="454" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-77" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2101" y="489" as="sourcePoint" />
+            <mxPoint x="2316" y="489" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-78" value="3.1: new" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="EPtcZUJhTNnM9XVzbQLt-77" vertex="1" connectable="0">
+          <mxGeometry x="0.0961" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-79" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2101" y="564.8199999999999" as="sourcePoint" />
+            <mxPoint x="2316" y="564.8199999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-80" value="3.2: new" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="EPtcZUJhTNnM9XVzbQLt-79" vertex="1" connectable="0">
+          <mxGeometry x="0.0961" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-81" value="return : TimeDTO" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" parent="1" source="EPtcZUJhTNnM9XVzbQLt-36" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2270" y="750" as="sourcePoint" />
+            <mxPoint x="2090" y="750" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-82" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1730" y="430" as="sourcePoint" />
+            <mxPoint x="1890" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-83" value="1: new" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="EPtcZUJhTNnM9XVzbQLt-82" vertex="1" connectable="0">
+          <mxGeometry x="0.0961" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-84" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=-0.019;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="EPtcZUJhTNnM9XVzbQLt-75" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1905" y="440" as="sourcePoint" />
+            <mxPoint x="2070" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-85" value="2: new" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="EPtcZUJhTNnM9XVzbQLt-84" vertex="1" connectable="0">
+          <mxGeometry x="0.0961" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EPtcZUJhTNnM9XVzbQLt-86" value="일정 관리" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
